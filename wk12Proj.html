@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 12 Lab</title>
+    <style>
+        .center {
+        padding: 10px 0;
+        border: 3px solid green;
+        text-align: center;
+      }
+    </style>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!-- Your HTML Code below here -->
+  <body class="container">
+    <div class="center"><h1>Student Research Tracker</h1></div>
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm">
+                  <div id="formContainer">
+                    <!--<form class="row g-3">-->
+                        <div class="form-group col-md-3 mb-1">
+                            <label for="fullNameInput" class="form-label">
+                                  Full Name:
+                            </label>
+                            <input type="text" id="fullNameInput" placeholder="Enter Full Name...">
+                        </div> 
+                        
+                        <div class="form-group col-md-3   mb-1">  
+                            <label for="researchAssignmentInput" class="form-label">
+                                  Assignment:
+                            </label>
+                            <input type="text" id="researchAssignmentInput" placeholder="Enter Research Assignment...">
+                        </div>
+                        <div class="form-group col-md-3 mb-1">
+                            <label for="idInput" class="form-label">
+                                    ID:
+                            </label>
+                            <input type="text" id="idInput" placeholder="Enter ID...">
+                        </div>   
+                                <!--<button type="button" class= "btn btn-info btn-lg mx-3" id="fetch-students">Fetch Students</button>-->
+                                
+                    <!--</form>--> 
+                  </div> 
+            </div>
+          </div>
+         </div>
+      </div>                    
+
+     <div class="container mt-5">
+        <div class="center">
+            <button type="button" class= "btn btn-info btn-lg mx-3" id="fetch-students">Fetch Students</button>
+            <button onclick=onCreateStudentClick() class="btn btn-success btn-lg mx-3">Add a student</button>
+            <button onclick=onUpdateStudentClick() class="btn btn-primary btn-lg mx-3">Update a student</button>
+            <button onclick=onDeleteStudentClick() class="btn btn-danger btn-lg mx-3">Delete a student</button>
+            <div id="student-container"></div>
+         </div> 
+     </div>    
+    <!-- ALL OF YOUR JQUERY/BOOTSTRAP/SCRIPT SETUP ARE BELOW HERE. 
+  WE USE CDN'S (content delivery network) INSTEAD OF NODE_MODULES -->
+
+    <!-- Jquery CDN  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper CDN: For dropdowns, popovers, tooltips, etc-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Our script -->
+    <script src="./wk12Proj.js"></script>
+  </body>
+</html>

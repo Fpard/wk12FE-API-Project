@@ -1,0 +1,44 @@
+{
+  "studentRoster": [
+    {
+      "fullName": "Tabitha Brown",
+      "researchAssignment": "rabbit ",
+      "id": 2
+    },
+    {
+      "fullName": "Mr. Tyrone Ziemann II",
+      "researchAssignment": "dogs & cats & birds",
+      "id": 4
+    },
+    {
+      "fullName": "Tammy Kunde",
+      "researchAssignment": "bird",
+      "id": 5
+    },
+    {
+      "fullName": "John Robert Jean",
+      "researchAssignment": "Rooster",
+      "id": 8
+    },
+    {
+      "fullName": "Cisco P",
+      "researchAssignment": "Chihuahua",
+      "id": "11"
+    },
+    {
+      "fullName": "Cisco P",
+      "researchAssignment": "chihuahua",
+      "id": "7"
+    },
+    {
+      "fullName": "Ora Thiel",
+      "researchAssignment": "bear and poule",
+      "id": "15"
+    },
+    {
+      "fullName": "Amanda Pardieu",
+      "researchAssignment": "Bald Eagle",
+      "id": "16"
+    }
+  ]
+}
